@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatapplication.ServerController">
+    <children>
+        <TextField fx:id="messageField" layoutX="27.0" layoutY="348.0" prefHeight="25.0" prefWidth="447.0" />
+        <Button layoutX="488.0" layoutY="347.0" mnemonicParsing="false" onAction="#sendMessage" text="Send" />
+        <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="27.0" layoutY="14.0" prefHeight="327.0" prefWidth="547.0" vbarPolicy="ALWAYS">
+            <TextArea fx:id="chatArea" layoutX="27.0" layoutY="14.0" prefHeight="327.0" prefWidth="547.0" />
+            <VBox fx:id="messageContainer" layoutX="31.0" layoutY="19.0" prefHeight="318.0" prefWidth="539.0" spacing="10">
+            </VBox>
+        </ScrollPane>
+    </children>
+</AnchorPane>
